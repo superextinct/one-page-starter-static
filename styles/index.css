@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+@import "fonts.css";
+@import "intro.css";
+@import "slide1.css";
+@import "slide2.css";
+@import "slide3.css";
+/* Weitere Slides ... */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  background: #111;
+  color: #fff;
+}
+
+main,
+.slide,
+footer {
+  width: 100%;
+}
+
+.slide {
+  height: 100vh;
+  scroll-snap-align: start;
+  position: relative;
+  /* Nur zur besseren Verständlichkeit, kann weg: */
+  border-bottom: 1px dashed #444;
+}
+
+.tooltip {
+  position: absolute;
+  pointer-events: none;
+}
+

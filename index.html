@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Template</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="styles/index.css">
+</head>
+
+<body>
+  <header class="slide">
+    <h1>Titel</h1>
+    <a href="#slide1" id="more">
+      <i class="gg-chevron-down"></i>
+    </a>
+  </header>
+
+  <div class="slide" id="slide1" data-step="1">
+    <svg id="chart1"></svg>
+  </div>
+
+  <div class="slide" id="slide2" data-step="2">
+    <svg id="chart2"></svg>
+  </div>
+
+  <div class="slide" id="slide3" data-step="3">
+    <svg id="chart3"></svg>
+  </div>
+
+  <script src="lib/d3.v6.min.js"></script>
+  <script src="lib/scrollama.js"></script>
+  <script src="scripts/chart1.js"></script>
+  <script src="scripts/chart2.js"></script>
+  <script src="scripts/chart3.js"></script>
+  <script src="scripts/index.js"></script>
+</body>
+</html>
